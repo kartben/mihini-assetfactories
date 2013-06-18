@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="false" name="org.eclipse.mihini.mqtt.assetfactory">
+   <implementation class="org.eclipse.mihini.mqtt.assetfactory.impl.MqttAssetFactory"/>
+   <property name="assetfactory.protocol" type="String" value="mqtt"/>
+   <service>
+      <provide interface="org.eclipse.mihini.connector.AssetFactory"/>
+   </service>
+</scr:component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="false" name="org.eclipse.mihini.coap.assetfactory">
+   <implementation class="org.eclipse.mihini.coap.assetfactory.CoapAssetFactory"/>
+   <property name="assetfactory.protocol" type="String" value="coap"/>
+   <service>
+      <provide interface="org.eclipse.mihini.connector.AssetFactory"/>
+   </service>
+</scr:component>
